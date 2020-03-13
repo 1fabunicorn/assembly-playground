@@ -1,3 +1,6 @@
+; credit to https://asmtutor.com
+;           https://github.com/DGivney/assemblytutorials
+
 ;------------------------------------------
 ; void iprint(Integer number)
 ; Integer printing function (itoa)
@@ -54,7 +57,6 @@ iprintLF:
 ; String length calculation function
 slen:
     push    ebx
-;    push    eax
     mov     ebx, eax
  
 nextchar:
@@ -65,7 +67,6 @@ nextchar:
  
 finished:
     sub     eax, ebx
-;    pop     eax
     pop     ebx
     ret
  
